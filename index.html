@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital@1&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Frontend Mentor | QR code component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      :root {
+        --container-background-color: hsl(212, 45%, 89%);
+        --card-background-color: hsl(0, 0%, 100%);
+        --border-radius: 20px;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      h3 {
+        text-align: center;
+      }
+
+      p {
+        text-align: center;
+        font-size: 15px;
+        color: hsl(220, 15%, 55%);
+      }
+
+      body {
+        background-color: var(--container-background-color);
+        font-family: 'Outfit', sans-serif;
+      }
+
+      .center-wrapper {
+        border: 1px solid hsl(218, 44%, 22%);
+        height: min-content;
+        width: min-content;
+      }
+
+      .qr-container {
+        background-color: var(--card-background-color);
+        border-radius: var(--border-radius);
+        width: min-content;
+        padding: 16px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+
+      img {
+        height: 250px;
+        width: 250px;
+        border-radius: var(--border-radius);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="center-wrapper">
+      <div class="qr-container">
+        <img src="./images/image-qr-code.png" alt="image of qr code" />
+        <h3>Improve your front-end skills by building projects</h3>
+        <p>
+          Scan the QR code to visit Frontend Mentor and take your coding skills
+          to the next level
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
